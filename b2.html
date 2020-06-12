@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="tuoi">
+    <input type="button" value="In kết quả" onclick="tinhsotuoi();">
+    <p id="result"></p>
+</form>
+<script>
+    function tinhsotuoi() {
+        var soTuoi = document.getElementById("tuoi").value;
+        var tst = Number(soTuoi);
+
+        if (soTuoi >= 16) {
+            document.getElementById("result").innerHTML = (" Học sinh đủ tuổi vào lớp 10 ");
+        } else {
+            document.getElementById("result").innerHTML = (" Học sinh không đủ tuổi vào lớp 10 ");
+        }
+    }
+</script>
+</body>
+</html>
